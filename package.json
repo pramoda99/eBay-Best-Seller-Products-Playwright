@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Pramoda Piyumali Gunasekara",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
