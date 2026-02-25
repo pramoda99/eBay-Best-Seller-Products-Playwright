@@ -58,5 +58,17 @@ test('Verify related products are within acceptable price range (50% to 200%)', 
 
   });
 
+    test('Verify less than or equal to 6 best sellers available', async ({ page }) => {
+
+    const productPage = new MainProductPage(page);
+
+    const relatedProducts =
+      await productPage.getRelatedProducts();
+
+    expect(relatedProducts.length)
+      .toBeLessThanOrEqual(6);
+
+  });
+
   
 });
