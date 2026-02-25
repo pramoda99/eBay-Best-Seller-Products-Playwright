@@ -70,5 +70,20 @@ test('Verify related products are within acceptable price range (50% to 200%)', 
 
   });
 
+    test('Verify product title is displayed', async ({ page }) => {
+
+    const productPage = new MainProductPage(page);
+
+    const relatedProducts =
+      await productPage.getRelatedProducts();
+
+    for (const product of relatedProducts) {
+
+      expect(product.title.length)
+        .toBeGreaterThan(0);
+
+    }
+
+  });
   
 });
