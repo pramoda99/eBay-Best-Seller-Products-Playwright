@@ -51,6 +51,7 @@ The following test cases were derived from the business requirements:
 | **TC_06** | **Verify no duplicate products are displayed** |
 ---
 
+
 ## How to Run the Project
 
 ### 1. Prerequisites
@@ -71,20 +72,11 @@ npm install
 # Install Playwright browsers
 npx playwright install
 
-
-### 3. How to Run Tests
-
 # Run all tests:
 npx playwright test
 
-
 # Run in headed mode:
 npx playwright test --headed
-
-
----
-
-### 4. Test Results
 
 # After execution, results can be viewed in:
 playwright-report/index.html
@@ -92,10 +84,12 @@ playwright-report/index.html
 # Open report:
 npx playwright show-report
 
+```
 
-
+---
 ## Author
 
-Pramoda Gunasekara
+Pramoda Piyumali Gunasekara
+
 Software Quality Assurance Engineer
 
