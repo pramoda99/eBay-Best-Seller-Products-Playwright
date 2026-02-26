@@ -102,5 +102,24 @@ test('Verify related products are within acceptable price range (50% to 200%)', 
 
   });
 
+  test('Verify no duplicate products are displayed', async ({ page }) => {
+
+    const productPage = new MainProductPage(page);
+
+    const relatedProducts =
+      await productPage.getRelatedProducts();
+
+    const titles =
+      relatedProducts.map(p => p.title);
+
+    const uniqueTitles =
+      new Set(titles);
+
+    expect(uniqueTitles.size)
+      .toEqual(titles.length);
+
+  });
+
+
   
 });
