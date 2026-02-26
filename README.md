@@ -1,9 +1,19 @@
 # QA Automation Project: eBay Best Sellers Validation
 
 ## Project Overview
-This repository contains a Playwright test automation framework designed to validate the "Best Selling" related products logic on the eBay Product Display Page. 
+
+### Scenario 
+Assume that as a shopper on eBay, you are going to buy a wallet. After searching for the main product, you will be able to see the main product. In the main product page, I would like to see a list of related products that are best sellers. Related products should be the same category as the main searched product. Those will be in the same price range. Up to six products will appear as best seller products.
 
 The goal is to ensure that when a shopper views a wallet, the suggested products are relevant in terms of **Category**, **Quantity**, and **Price Range**.
+
+---
+
+## Manual Testing - Documentation
+* [01-Requirement Clarifications Document](https://github.com/pramoda99/eBay-Best-Seller-Products-Playwright/blob/main/documentation/01-Requirement%20Clarifications_Pramoda%20Piyumali%20Gunasekara.xlsx) 
+* [02-Test Strategy Document](https://github.com/pramoda99/eBay-Best-Seller-Products-Playwright/blob/main/documentation/02-Test%20Strategy_Pramoda%20Piyumali%20Gunasekara.pdf) 
+* [03-Test Suite Document](https://github.com/pramoda99/eBay-Best-Seller-Products-Playwright/blob/main/documentation/03-Test%20Suite_Pramoda%20Piyumali%20Gunasekara.xlsx) 
+* [04-Bugs Report Document](https://github.com/pramoda99/eBay-Best-Seller-Products-Playwright/blob/main/documentation/04-Bugs%20Report_Pramoda%20Piyumali%20Gunasekara.xlsx) 
 
 ---
 
@@ -55,13 +65,13 @@ The following test cases were derived from the business requirements:
 ## How to Run the Project
 
 ### 1. Prerequisites
-* [Node.js](https://nodejs.org/) (v18 or higher)
+* [Node.js](https://nodejs.org/) 
 * Git
 
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone <YOUR_GITHUB_REPO_LINK>
+git clone <https://github.com/pramoda99/eBay-Best-Seller-Products-Playwright.git>
 
 # Navigate to the folder
 cd eBay Best Seller Products
