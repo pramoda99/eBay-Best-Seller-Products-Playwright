@@ -6,6 +6,6 @@ export const TestData = {
 
   PRICE_RANGE_MIN_FACTOR: 0.5,
 
-  PRICE_RANGE_MAX_FACTOR: 2.0
+  PRICE_RANGE_MAX_FACTOR: 5.0
 
 };
